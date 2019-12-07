@@ -1,0 +1,11 @@
+<button *ngIf="updateTodo; else update" (click)="changeState()">Update</button>
+<ng-template #update>
+  <form [formGroup]="form" (ngSubmit)="onUpdateTodo()">
+    <label>
+    <input type="text"
+           formControlName="text"
+           id="update_text">
+    </label>
+    <button type="submit">Edit</button>
+  </form>
+</ng-template>

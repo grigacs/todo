@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+::placeholder{
+  color: #CB656B;
+  opacity: .8;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #263238;
+  color: #fff;
+  font-weight: bold;
+}
+
+h1 {
+  color: #FFCB6B;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+}
+
+button {
+  padding: 12px;
+  border-radius: 4px;
+  background: #7CA2F4;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+input {
+  padding: 12px;
+  border-radius: 4px;
+  border: none;
+  margin-right: 15px;
+  background: #1F292E;
+  color: #CB656B;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: #CB656B;
+}

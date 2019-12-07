@@ -1,0 +1,10 @@
+button, input {
+  float: left;
+}
+
+button::after, input::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+

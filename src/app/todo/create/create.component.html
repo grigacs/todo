@@ -1,0 +1,14 @@
+<button *ngIf="createTodo; else create" (click)="changeState()">Create Todo</button>
+<ng-template #create>
+  <form [formGroup]="form" (ngSubmit)="onAddTodo()">
+    <label>
+      <input
+        id="todo_text"
+        type="text"
+        formControlName="text"
+        placeholder="new Todo"
+      >
+    </label>
+    <button type="submit">Add Todo</button>
+  </form>
+</ng-template>

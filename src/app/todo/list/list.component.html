@@ -1,0 +1,14 @@
+<div>
+  <h1>Todo list</h1>
+  <div>
+    <app-create></app-create>
+  </div>
+  <div class="todo-list" *ngFor="let todo of todos">
+      <p>
+        {{todo.text}}
+        <span>{{todo.date | date}}</span>
+      </p>
+      <app-update [todo]=todo></app-update>
+      <app-delete [id]="todo.id"></app-delete>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+button {
+  float: left;
+  margin-left: 15px;
+}
+
+:host::after{
+  content: '';
+  display: table;
+  clear: both;
+}

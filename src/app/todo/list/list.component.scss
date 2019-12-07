@@ -1,0 +1,23 @@
+.todo-list {
+  margin-top: 20px;
+  margin-right: 5px;
+  p{
+    color: #B7DB87;
+    margin-right: 15px;
+    span {
+        margin-left: 5px;
+        font-size: 10px;
+        color: #B7C3D7;
+    }
+  }
+
+  button {
+    margin-right: 5px;
+  }
+
+  &::after {
+    display: table;
+    content: '';
+    clear: both;
+  }
+}
