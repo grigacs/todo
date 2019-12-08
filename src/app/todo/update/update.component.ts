@@ -34,7 +34,8 @@ export class UpdateComponent implements OnInit {
     const todo: TodoModel = {
       id: this.todo.id,
       text: this.form.value.text,
-      date: new Date()
+      date: new Date(),
+      finished: this.todo.finished
     };
 
     this.todoService.updateTodo(todo);

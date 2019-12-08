@@ -1,6 +1,18 @@
 button {
   float: left;
-  margin-left: 15px;
+  color: #CB656B;
+  margin-top: 5px;
+  padding: 0;
+}
+
+button:hover{
+  color: #E38365;
+}
+
+button:after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
 :host::after{

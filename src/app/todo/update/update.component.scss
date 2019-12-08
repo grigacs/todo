@@ -2,9 +2,22 @@ button, input {
   float: left;
 }
 
+input {
+  margin: 15px 15px 15px 0;
+}
+
+button{
+  margin-right: 15px;
+  padding: 0;
+  margin-top: 15px;
+}
+
+button.edit {
+  margin-top: 5px;
+}
+
 button::after, input::after{
   content: '';
   display: table;
   clear: both;
 }
-

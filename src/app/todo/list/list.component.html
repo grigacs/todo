@@ -1,14 +1,23 @@
 <div>
   <h1>Todo list</h1>
-  <div>
+  <div class="create-todo">
     <app-create></app-create>
   </div>
-  <div class="todo-list" *ngFor="let todo of todos">
+  <div [ngClass]="{'finished': todo.finished === true}" class="todo-list" *ngFor="let todo of todos">
       <p>
         {{todo.text}}
-        <span>{{todo.date | date}}</span>
       </p>
-      <app-update [todo]=todo></app-update>
-      <app-delete [id]="todo.id"></app-delete>
+      <span>
+        {{todo.date | date }}
+      </span>
+    <div class="buttons">
+      <app-update *ngIf="!todo.finished" [todo]=todo></app-update>
+      <app-delete *ngIf="!todo.finished" [id]="todo.id"></app-delete>
+      <form [formGroup]="form" (submit)="onCheckFinished(todo)">
+        <button *ngIf="!todo.finished" type="submit">
+          <mat-icon aria-hidden="false" aria-label="check label">check</mat-icon>
+        </button>
+      </form>
+    </div>
   </div>
 </div>

@@ -1,4 +1,6 @@
-<button *ngIf="createTodo; else create" (click)="changeState()">Create Todo</button>
+<button class="create" *ngIf="createTodo; else create" (click)="changeState()">
+  <mat-icon aria-hidden="false" aria-label="create icon">create</mat-icon>
+</button>
 <ng-template #create>
   <form [formGroup]="form" (ngSubmit)="onAddTodo()">
     <label>
@@ -9,6 +11,8 @@
         placeholder="new Todo"
       >
     </label>
-    <button type="submit">Add Todo</button>
+    <button type="submit">
+      <mat-icon aria-hidden="false" aria-label="save icon">save</mat-icon>
+    </button>
   </form>
 </ng-template>

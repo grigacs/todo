@@ -33,7 +33,7 @@ export class TodoService {
         return this.todos;
       }
 
-      this.todos[index] = {id: todo.id, text: todo.text, date: todo.date};
+      this.todos[index] = {id: todo.id, text: todo.text, date: todo.date, finished: todo.finished};
 
       this.getTodos();
   }

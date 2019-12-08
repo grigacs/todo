@@ -32,7 +32,8 @@ export class CreateComponent implements OnInit {
 
     const todo: TodoModel = {
       text: this.form.value.text,
-      date: new Date()
+      date: new Date(),
+      finished: false
     };
 
     this.form.reset();

@@ -1,4 +1,6 @@
-<button *ngIf="updateTodo; else update" (click)="changeState()">Update</button>
+<button class="edit" *ngIf="updateTodo; else update" (click)="changeState()">
+  <mat-icon aria-hidden="false" aria-label="edit icon">edit</mat-icon>
+</button>
 <ng-template #update>
   <form [formGroup]="form" (ngSubmit)="onUpdateTodo()">
     <label>
@@ -6,6 +8,8 @@
            formControlName="text"
            id="update_text">
     </label>
-    <button type="submit">Edit</button>
+    <button type="submit">
+      <mat-icon aria-hidden="false" aria-label="save icon">save</mat-icon>
+    </button>
   </form>
 </ng-template>
