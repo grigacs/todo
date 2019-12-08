@@ -1,0 +1,78 @@
+{
+  "configVersion": 1,
+  "timestamp": 1575833600528,
+  "index": "todo/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "todo/favicon.ico",
+        "todo/index.html",
+        "todo/main-es2015.f40395160f82bec4f68b.js",
+        "todo/main-es5.eb4d2b2b7ffec12f1925.js",
+        "todo/polyfills-es2015.27661dfa98f6332c27dc.js",
+        "todo/polyfills-es5.7f43b971448d2fb49202.js",
+        "todo/runtime-es2015.858f8dd898b75fe86926.js",
+        "todo/runtime-es5.741402d1d47331ce975c.js",
+        "todo/styles.1666ec3043d137925347.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "todo/assets/icons/icon-128x128.png",
+        "todo/assets/icons/icon-144x144.png",
+        "todo/assets/icons/icon-152x152.png",
+        "todo/assets/icons/icon-192x192.png",
+        "todo/assets/icons/icon-384x384.png",
+        "todo/assets/icons/icon-512x512.png",
+        "todo/assets/icons/icon-72x72.png",
+        "todo/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "todo/assets/icons/icon-128x128.png": "a78c41d06078885a0a6eb41557d45dab891b4e30",
+    "todo/assets/icons/icon-144x144.png": "a78c41d06078885a0a6eb41557d45dab891b4e30",
+    "todo/assets/icons/icon-152x152.png": "a78c41d06078885a0a6eb41557d45dab891b4e30",
+    "todo/assets/icons/icon-192x192.png": "a78c41d06078885a0a6eb41557d45dab891b4e30",
+    "todo/assets/icons/icon-384x384.png": "a78c41d06078885a0a6eb41557d45dab891b4e30",
+    "todo/assets/icons/icon-512x512.png": "a78c41d06078885a0a6eb41557d45dab891b4e30",
+    "todo/assets/icons/icon-72x72.png": "a78c41d06078885a0a6eb41557d45dab891b4e30",
+    "todo/assets/icons/icon-96x96.png": "a78c41d06078885a0a6eb41557d45dab891b4e30",
+    "todo/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "todo/index.html": "6d99b756cc5c45273943bc05fb84ec6ca24ace18",
+    "todo/main-es2015.f40395160f82bec4f68b.js": "8644d18defc4c3d791dbfea0b5af0964b6fe44e3",
+    "todo/main-es5.eb4d2b2b7ffec12f1925.js": "39b4af0077ea129d28e81d3345800cef18f6fe84",
+    "todo/polyfills-es2015.27661dfa98f6332c27dc.js": "77f974dd2b186031cfc4f4526d96db4efcd39353",
+    "todo/polyfills-es5.7f43b971448d2fb49202.js": "f84a71ef6c7a788b5fe701bf2405313d7766a66d",
+    "todo/runtime-es2015.858f8dd898b75fe86926.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
+    "todo/runtime-es5.741402d1d47331ce975c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
+    "todo/styles.1666ec3043d137925347.css": "211021045e508c5fc93922ae1b62c6426f4f55e5"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
